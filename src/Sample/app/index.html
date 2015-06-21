@@ -4,25 +4,28 @@
 <head>
     <meta charset="utf-8" />
     <title>Sample</title>
-    <base href="/"/>
+    <base href="/" />
 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
     <div>
-        <div data-ng-include="'shell.html'"></div>
+        <div data-ng-include="'layout/shell.html'"></div>
     </div>
 
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="//code.angularjs.org/1.4.1/angular.js"></script>
-    <script src="//code.angularjs.org/1.4.1/angular-route.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
 
     <script src="app.js"></script>
-    <script src="shell.js"></script>
-    <script src="route1.js"></script>
-    <script src="route2.js"></script>
+    <script src="app.route.js"></script>
+    <script src="core/router.js"></script>
+    <script src="layout/shell.js"></script>
+    <script src="home/home.js"></script>
+    <script src="route1/route1.js"></script>
+    <script src="route2/route2.js"></script>
 
 </body>
 </html>

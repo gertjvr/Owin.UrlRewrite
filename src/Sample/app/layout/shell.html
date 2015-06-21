@@ -16,8 +16,8 @@
                     </div>
                     <div class="navbar-collapse" data-ng-class="{collapse: vm.isCollapsed}">
                         <ul class="nav navbar-nav navbar-left">
-                            <li><a data-ng-href="/route1">Route1</a></li>
-                            <li><a data-ng-href="/route2">Route2</a></li>
+                            <li><a ui-sref="route1">Route1</a></li>
+                            <li><a ui-sref="route2">Route2</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="https://github.com/gertjvr/owin.urlrewrite">About</a></li>
@@ -28,7 +28,7 @@
         </header>
 
         <section class="content">
-            <div data-ng-view></div>
+            <div ui-view></div>
         </section>
 
         <footer class="clearfix">

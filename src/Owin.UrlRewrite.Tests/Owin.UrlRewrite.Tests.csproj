@@ -71,6 +71,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="ForbiddenTests.cs" />
     <Compile Include="GoneTests.cs" />
     <Compile Include="HostnameTests.cs" />

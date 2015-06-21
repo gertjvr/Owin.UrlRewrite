@@ -1,0 +1,39 @@
+﻿<div data-ng-controller="Shell as vm">
+
+    <div class="container">
+
+        <header class="clearfix">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-ng-click="vm.isCollapsed = !vm.isCollapsed" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" data-ng-href="/">Sample</a>
+                    </div>
+                    <div class="navbar-collapse" data-ng-class="{collapse: vm.isCollapsed}">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li><a data-ng-href="/route1">Route1</a></li>
+                            <li><a data-ng-href="/route2">Route2</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="https://github.com/gertjvr/owin.urlrewrite">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="content">
+            <div data-ng-view></div>
+        </section>
+
+        <footer class="clearfix">
+        </footer>
+
+    </div>
+
+</div>

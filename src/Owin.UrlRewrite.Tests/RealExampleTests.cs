@@ -11,7 +11,7 @@ namespace GertJvr.Owin.UrlRewrite.Tests
         [Fact]
         public async Task Monkey()
         {
-            var middleware = new UrlRewriterMiddleware(new VoidOwinMiddleware(), new UrlRewriterOptions(new[] { @"!\.\w+$ /index.html [L]" }));
+            var middleware = new UrlRewriterMiddleware(new VoidOwinMiddleware(), new UrlRewriterOptions(new[] { "!\\.\\w+$ /index.html [L]" }));
 
             var request = OwinHelper.CreateRequest("http://test.com/notifications.json");
             var context = request.Context;

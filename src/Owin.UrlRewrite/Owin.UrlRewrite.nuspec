@@ -13,5 +13,12 @@
     <releaseNotes></releaseNotes>
     <copyright>Copyright 2015</copyright>
     <tags>urlrewrite owin middleware</tags>
+    <dependencies>
+      <dependency id="Owin" version="1.0.0.0" />
+      <dependency id="Microsoft.Owin" version="3.0.1.0" />
+    </dependencies>
   </metadata>
+  <files>
+    <file src="bin\Release\GertJvR.Owin.UrlRewrite.dll" target="lib" />
+  </files>
 </package>

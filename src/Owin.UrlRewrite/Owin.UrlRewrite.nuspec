@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>GertJvR.Owin.UrlRewrite</id>
+    <version>0.0.0.0</version>
+    <title>Owin.UrlRewrite</title>
+    <authors>Gert Jansen van Rensburg</authors>
+    <owners>Gert Jansen van Rensburg</owners>
+    <licenseUrl>https://github.com/gertjvr/owin.urlrewrite/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/gertjvr/owin.urlrewrite</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Owin middleware for emulate modRewrite</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>urlrewrite owin middleware</tags>
+  </metadata>
+</package>

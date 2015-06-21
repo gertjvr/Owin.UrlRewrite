@@ -1,0 +1,15 @@
+*.user
+*.suo
+**/[Oo]bj/*
+**/[Bb]in/*
+
+#resharper
+_ReSharper*/
+_ReSharper.*
+
+#ncrunch
+*.ncrunchproject
+*.ncrunchsolution
+_NCrunch*/
+
+Thumbs.db

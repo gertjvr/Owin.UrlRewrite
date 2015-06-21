@@ -1,31 +1,41 @@
 #Owin UrlRewrite Middleware
 ====================
 
+## Example
+```
+private class StartUp(IAppBuilder app)
+{
+    app.UrlRewriter("!\\.\\w+$ /index.html [L]");
+
+    app.UseStaticFiles();
+}
+```
+
 ##Flags
 Last [L]
 If a path matches, any subsequent rewrite rules will be disregarded.
 
-##Proxy [P] (Not Implemented Yet)
+##### Proxy \[P\] (Not Implemented Yet)
 Proxy your requests
-'^/test/proxy/(.*)$ http://example.org/$1 [P]'
+```'^/test/proxy/(.*)$ http://example.org/$1 [P]'```
 
-##Redirect
-Redirect [R], [R=3**] (replace * with numbers)
+##### Redirect
+Redirect \[R\], \[R=3**\] (replace * with numbers)
 Issue a redirect for request.
 
-##Nocase [NC]
+##### Nocase \[NC\]
 Regex match will be case-insensitive.
 
-##Forbidden [F]
+##### Forbidden \[F\]
 Gives a HTTP 403 forbidden response.
 
-##Gone [G]
+##### Gone \[G\]
 Gives a HTTP 410 gone response.
 
-##Type [T=*] (replace * with mime-type)
+##### Type \[T=*\] (replace * with mime-type)
 Sets content-type to the specified one.
 
-##Host [H], [H=*] (replace * with a regular expression that match a hostname)
+##### Host \[H\], \[H=*\] (replace * with a regular expression that match a hostname)
 Match on host.
 
 For more info about available flags, please go to the Apache page: http://httpd.apache.org/docs/current/rewrite/flags.html

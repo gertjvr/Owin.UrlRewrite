@@ -12,15 +12,14 @@ private class StartUp(IAppBuilder app)
 ```
 
 ##Flags
-Last [L]
+##### Last [L]
 If a path matches, any subsequent rewrite rules will be disregarded.
 
 ##### Proxy \[P\] (Not Implemented Yet)
 Proxy your requests
 ```'^/test/proxy/(.*)$ http://example.org/$1 [P]'```
 
-##### Redirect
-Redirect \[R\], \[R=3**\] (replace * with numbers)
+##### Redirect \[R\], \[R=3**\] (replace * with numbers)
 Issue a redirect for request.
 
 ##### Nocase \[NC\]

@@ -1,17 +1,26 @@
-#Owin UrlRewrite Middleware
+#Owin UrlRewrite <a href="http://teamcity.gertjvr.com/viewType.html?buildTypeId=OSS_OwinUrlRewrite_CI&guest=1">
+<img src="http://teamcity.gertjvr.com/app/rest/builds/buildType:(id:OSS_OwinUrlRewrite_CI)/statusIcon"/></a>
 ====================
 
-## Example
-```
-private class StartUp(IAppBuilder app)
-{
-    app.UrlRewriter("!\\.\\w+$ /index.html [L]");
+An OWIN middleware that provides a way to modify incoming URL requests, dynamically, based on regular expression rules. This allows you to map arbitrary URLs onto your internal URL structure in any way you like, based on apache [mod_rewrite](http://httpd.apache.org/docs/current/rewrite)
 
-    app.UseStaticFiles();
+## Using
+
+See example project:
+
+```
+private class StartUp
+{
+    public void Configuration(IAppBuilder app)
+    {
+        app.UrlRewriter("!\\.\\w+$ /index.html [L]");
+
+        app.UseStaticFiles();
+    }
 }
 ```
 
-##Flags
+## Flags
 ##### Last [L]
 If a path matches, any subsequent rewrite rules will be disregarded.
 
@@ -41,9 +50,6 @@ For more info about available flags, please go to the Apache page: http://httpd.
 
 ##<a id="continuous-integration-from-teamcity">Continuous Integration from TeamCity</a>
 Owin.UrlRewrite Monitor project is built & tested continuously by TeamCity (more details [here](http://www.mehdi-khalili.com/continuous-integration-delivery-github-teamcity)). That applies to pull requests too. Shortly after you submit a PR you can check the build and test status notification on your PR. I would appreciate if you could send me green PRs.
-
-The current build status on the CI server is <a href="http://teamcity.gertjvr.com/viewType.html?buildTypeId=OSS_OwinUrlRewrite_CI&guest=1">
-<img src="http://teamcity.gertjvr.com/app/rest/builds/buildType:(id:OSS_OwinUrlRewrite_CI)/statusIcon"/></a>
 
 ##<a id="author">Author</a>
 Gert Jansen van Rensburg ([@gertjvr81](http://twitter.com/gertjvr81))

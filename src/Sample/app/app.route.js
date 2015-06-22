@@ -47,8 +47,8 @@
             {
                 state: '404',
                 config: {
-                    url: 'core/404',
-                    templateUrl: '404.html'
+                    url: '/404',
+                    templateUrl: 'core/404.html'
                 }
             }
         ];

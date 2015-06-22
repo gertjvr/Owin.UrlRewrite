@@ -11,7 +11,6 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Owin middleware for emulate modRewrite</description>
     <releaseNotes></releaseNotes>
-    <copyright>Copyright 2015</copyright>
     <tags>urlrewrite owin middleware</tags>
     <dependencies>
       <dependency id="Owin" version="1.0.0.0" />

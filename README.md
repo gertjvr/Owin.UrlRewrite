@@ -1,10 +1,9 @@
-#Owin UrlRewrite <a href="http://teamcity.gertjvr.com/viewType.html?buildTypeId=OSS_OwinUrlRewrite_CI&guest=1">
-<img src="http://teamcity.gertjvr.com/app/rest/builds/buildType:(id:OSS_OwinUrlRewrite_CI)/statusIcon"/></a>
+### Owin UrlRewrite [![Build Status](http://teamcity.gertjvr.com/app/rest/builds/buildType:(id:OSS_OwinUrlRewrite_CI)/statusIcon)](http://teamcity.gertjvr.com/viewType.html?buildTypeId=OSS_OwinUrlRewrite_CI&guest=1)
 ====================
 
 An OWIN middleware that provides a way to modify incoming URL requests, dynamically, based on regular expression rules. This allows you to map arbitrary URLs onto your internal URL structure in any way you like, based on apache [mod_rewrite](http://httpd.apache.org/docs/current/rewrite)
 
-## Using
+#### Using
 
 See example project:
 
@@ -20,7 +19,7 @@ private class StartUp
 }
 ```
 
-## Flags
+#### Flags
 ##### Last [L]
 If a path matches, any subsequent rewrite rules will be disregarded.
 

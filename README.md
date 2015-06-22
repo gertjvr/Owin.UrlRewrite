@@ -48,7 +48,7 @@ Match on host.
 For more info about available flags, please go to the Apache page: http://httpd.apache.org/docs/current/rewrite/flags.html
 
 ##<a id="continuous-integration-from-teamcity">Continuous Integration from TeamCity</a>
-Owin.UrlRewrite Monitor project is built & tested continuously by TeamCity (more details [here](http://www.mehdi-khalili.com/continuous-integration-delivery-github-teamcity)). That applies to pull requests too. Shortly after you submit a PR you can check the build and test status notification on your PR. I would appreciate if you could send me green PRs.
+Owin.UrlRewrite project is built & tested continuously by TeamCity (more details [here](http://www.mehdi-khalili.com/continuous-integration-delivery-github-teamcity)). That applies to pull requests too. Shortly after you submit a PR you can check the build and test status notification on your PR. I would appreciate if you could send me green PRs.
 
 ##<a id="author">Author</a>
 Gert Jansen van Rensburg ([@gertjvr81](http://twitter.com/gertjvr81))
